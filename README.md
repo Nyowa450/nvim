@@ -1,5 +1,5 @@
 
-### Neovim Config Wirtten in Lua 🏜
+### Neovim Config Written in Lua 🏜
 
 ![neovim](./images/neovim.jpeg)
 
