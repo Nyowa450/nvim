@@ -86,3 +86,6 @@ keymap.set('n','<C-t>',':w<CR>')
 
 -- 設定ファイルを開く
 keymap.set('n','<F1>',':edit $MYVIMRC<CR>')
+
+-- -- -- ハイライトを全て非表示にする
+vim.keymap.set('n', '<leader><ESC>', ':noh<CR>')

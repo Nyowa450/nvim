@@ -1,5 +1,5 @@
 
-vim.g["fern#renderer"] = "nvim-web-devicons"
+vim.g["fern#renderer"] = "nerdfont"
 
 vim.g["fern#default_hidden"]= 1
 

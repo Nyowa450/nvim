@@ -25,6 +25,13 @@ require("lazy").setup({
     priority = 1000, -- make sure to load this before all the other start plugins
   }, 
 
+  -- {
+  --   "craftzdog/solarized-osaka.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
+
  -- Common Plugin(Lua)
   'nvim-lua/plenary.nvim',
 
@@ -42,9 +49,13 @@ require("lazy").setup({
  -- Buffer Control
   {'romgrk/barbar.nvim',dependencies = { 'nvim-web-devicons' }},
 
-  {'lambdalisue/fern.vim',lazy = false, priority = 1000 }, --遅延読み込みをオフにして優先度を上げないとnvim-web-deviconsが読み込めない
+  {'lambdalisue/fern.vim',lazy = false, priority = 1000 }, 
+  {'lambdalisue/nerdfont.vim'},
   {'lambdalisue/glyph-palette.vim'},
-  {'TheLeoP/fern-renderer-web-devicons.nvim',dependencies = {'nvim-web-devicons'}}, 
+  {'lambdalisue/fern-renderer-nerdfont.vim'},
+
+  -- JSのアイコンなどが表示されなくなっていたs
+  -- {'TheLeoP/fern-renderer-web-devicons.nvim',dependencies = {'nvim-web-devicons'}}, 
 
 
  --Syntax Highlight
@@ -67,7 +78,7 @@ require("lazy").setup({
  --  'haringsrob/nvim_context_vt'
 
   -- {'petertriho/nvim-scrollbar'}, -- オンにすると巨大なファイルでかなり重くなる
-  -- {'kevinhwang91/nvim-hlslens'},
+  {'kevinhwang91/nvim-hlslens'},
   {'haya14busa/vim-asterisk'},
   
   {'lukas-reineke/indent-blankline.nvim', main = "ibl", opts = {} },
@@ -100,7 +111,7 @@ require("lazy").setup({
   { 'akinsho/toggleterm.nvim'},
 
  -- Document
-  -- { 'vim-jp/vimdoc-ja', lazy = false },
+  { 'vim-jp/vimdoc-ja'},
 
   {
     'phaazon/hop.nvim',

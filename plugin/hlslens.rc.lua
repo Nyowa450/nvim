@@ -19,5 +19,3 @@ hls.setup({
 -- vim.api.nvim_set_keymap('n', 'g*', [[g*<Cmd>lua require('hlslens').start()<CR>]], kopts)
 -- vim.api.nvim_set_keymap('n', 'g#', [[g#<Cmd>lua require('hlslens').start()<CR>]], kopts)
 
--- -- -- ハイライトを全て非表示にする
-vim.keymap.set('n', '<leader><ESC>', ':noh<CR>')
